@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&family=Merienda:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0ebdbaeb66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Sara's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about" id="about-nav">About</a>
+            <a href="#experience" id="experience-nav">Experience</a>
+            <a href="#projects" id="projects-nav">Projects</a>
+            <a href="#contact" id="contact-nav">Contact</a>
+            <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+                <i class="fa fa-bars"></i> </a>
+        </nav>
+        <hr>
+        <section id="home">
+            <div id="home-headline">
+                <h1>Hi, I'm Sara.</h1>
+                <h2>Welcome to my portfolio!</h2>
+            </div>
+            <div class="scroll-down__first">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="gradient" id="about">
+            <div class="green-box box-about">
+                <div class="green-box-content-left">
+                    <h3 id="about-headline">About Me</h3>
+                    <p> I am a dedicated and ambitious project manager with extensive experience, mainly within marketing.
+                        A passionately curious mind with a big interest in people, communication, IT and food.
+                        I gladly take on new challenges and adapt quickly to new situations with a high sense of urgency.
+                        I am well organized, solution oriented and I always strive to create a positive atmosphere around me.</p>
+                </div>
+                    <img src="images/profile_picture.jpg" alt="Sara Källqvist" id="profile-picture">
+            </div>
+        </section>
+    </main>
+<footer class="gradient">
+    <div id="go-home">
+        <a href="#home">
+            <p id="back"><i class="fas fa-chevron-up"></i>
+             Back to Top</p>
+        </a>
+    </div>
+    <nav id="nav-footer">
+        <a href="https://www.linkedin.com/in/sarakallqvist/" id="linkedin" target="blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/sarakallqvist" id="github" target="blank"><i class="fab fa-github"></i></a>
+        <a href="#about" id="about-foot">About</a>
+        <a href="#experience" id="experience-foot">Experience</a>
+        <a href="#projects" id="projects-foot">Projects</a>
+        <a href="#contact" id="contact-foot">Contact</a>
+
+    </nav>
+</footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html>

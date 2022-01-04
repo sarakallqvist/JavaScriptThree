@@ -1,0 +1,138 @@
+body {
+    margin: auto;
+    max-width: 2000px;
+    scroll-behavior: smooth;
+    background: url(../images/forest.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+hr {
+    height: 2px;
+    width: 80%;
+    border-width: 0px;
+    background-color: #143823;
+}
+.fa-chevron-down, .fa-chevron-up {
+    color: #F7F3E0;
+    font-size: 24px;
+    text-align: center;
+    transition: font-size .3s ease-in-out;
+    cursor: pointer;
+}
+.fa-chevron-down:hover, .fa-chevron-up:hover {
+    color: #1B4332;
+    font-size: 26px;
+}
+.gradient {
+    background: linear-gradient(to top, #6d8869, #5d7b5e, #4d6e53, #3e6149,
+    #2f543f, #264b38, #1e4232, #16392b, #133125, #0f2a20, #0c231a, #081c15) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 50px;
+}
+h1, h2, h3, h4, h5, a {
+    font-family: 'Merienda', cursive;
+    color: #143823;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #F7F3E0;
+    text-align: left;
+}
+h4 {
+    font-size: 36px;
+    text-align: left;
+}
+h5 {
+    font-size: 24px;
+    color: #F7F3E0;
+    text-align: left;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #F7F3E0;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    font-size: 24px;
+    transition: font-size .3s ease-in-out;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 25px;
+    color: #1B4332
+}
+.green-box {
+    height: fit-content;
+    background-color: #6D8869;
+    opacity: .7;
+    border-radius: 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+    background-color: #6D8869;
+    font-family: 'Merienda', cursive;
+    color:#F7F3E0;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 10px 0px 10px;
+    width: 55%;
+    text-align: justify;
+    font-size: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.btn:hover {
+    background-color: #6D8869;
+    color: #1B4332;
+}
+.btn:focus {
+    background-color: #6D8869;
+    color: #F7F3E0;
+    box-shadow: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.fa-graduation-cap {
+    font-size: 24px;
+    color: #F7F3E0;
+    text-align: center;
+}
+.fa-briefcase {
+    font-size: 24px;
+    color: #F7F3E0;
+    text-align: center;
+}
+.fa-envelope, .fa-phone, .fa-map-marker-alt {
+    font-size: 36px;
+    color: #081C15;
+    text-align: center;
+}
+.fa-linkedin-in, .fa-github {
+    color: #F7F3E0;
+    font-size: 36px;
+    text-align: left;
+    transition: font-size .3s ease-in-out;
+}
+.fa-linkedin-in:hover, .fa-github:hover {
+    color: #1B4332;
+    font-size: 38px;
+}
